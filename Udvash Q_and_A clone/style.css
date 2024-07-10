@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    color: #000;
+    list-style-type:none;
+}
+
+html{
+    font-size: 82%;
+}
+body{
+    background-color: rgb(216, 212, 212);
+    height: 100vh;
+}
+header{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.logo{
+    margin: 0 10% 0;
+}
+.logo img{
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar .menu li{
+    height: 100%;
+}
+
+.navbar .menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.navbar .menu li a:hover{
+    background-color: rgba(247, 83, 83, 0.2);
+    color: red ;
+}
+
+.profile{
+    margin-right: 10%;
+}
+.profile i{
+    font-size: 3.5rem;
+}
+
+
+.menu .sub-menu {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    display: none;
+}
+
+.navbar .menu li:hover .sub-menu{
+    display: inline-block;
+}
+
+.menu .sub-menu li{
+   height: 100%;
+   width: 100%;
+   
+}
+
+.menu .sub-menu li a{
+    padding:10px 5px;
+    height: 100%;
+    width: 100%;
+    
+ }
+.menu .sub-menu li a:hover{
+    background-color: rgba(247, 83, 83, 0.2);
+    color: red ;
+ }
+
+ .container{
+    background-color: #fff;
+    margin:3% 10%;
+ }
+
+ .container .heading h2{
+    text-align: center;
+ }
+
+ .container .ques-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+ .container .ques-table table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+ }
+ .container .ques-table  th, td{
+    padding: 10px 50px;
+ }

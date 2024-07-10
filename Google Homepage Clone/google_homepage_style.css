@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: white;
+}
+
+.left-arrow, .right-arrow, .refresh, .home-icon{
+    height: 15px;
+    width: 15px;
+}
+.left-arrow{
+    margin-left: 15px;
+}
+.left-arrow:hover{
+    background-color: blue;
+}
+.right-arrow{
+    margin-left: 18px;
+}
+.refresh{
+    margin-left: 18px;
+}
+.home-icon{
+    margin-left: 18px;
+}
+.first-input{
+    margin-top: 8px;
+    margin-left: 18px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 75%;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: rgb(245, 245, 245);
+    border: 0;
+}
+
+.three-dot{
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.profile-pic{
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.gmail{
+    height: 10px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.youtube{
+    height: 10px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.maps{
+    height: 10px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link
+{
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.link:hover{
+    background-color: rgb(245, 245, 245);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+img :hover{
+    background-color: rgb(245, 245, 245);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+.short-link{
+    float: right;
+}
+
+.top-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: -2px 0px 5px rgb(196, 187, 187);
+    margin-top: 0;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+hr{
+    margin-top: 10px;
+    border: 1;
+}
+p{
+    margin-top: 100px;
+    height: 1500px;
+    padding: 10px;
+}
+
+.profile-photo{
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.nine-dot{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.labs{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+.image-link, .gmail-link{
+    margin-right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.below-top{
+    margin-top: 100px;
+}
+
+.gmail-link:hover{
+    text-decoration: underline;
+}
+.image-link:hover{
+    text-decoration: underline;
+}
+
+.g-logo{
+    width: 270px;
+    height: 110px;
+    margin-top: 50px;
+}
+.google-logo{
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.main-search{
+    text-align: center;
+}
+
+.main-search input{
+    border: 0;
+    padding: 12px 15px;
+    width: 40%;
+    border-radius: 50px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    box-shadow: -2px 0px 5px rgb(196, 187, 187);
+    }
+.shortcuts{
+    text-align: center;
+    margin-top: 30px;
+}
+.shortcuts img{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(228, 222, 222);
+    padding: 10px;
+    border-radius: 100px;
+}

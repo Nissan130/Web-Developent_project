@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+
+nav .logo{
+    font-size: 33px;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover,
+    nav ul li a.active{
+    color: #1b1b1b;
+    background: #fff;
+}
+
+nav .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+
+@media (max-width:900px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        background-color: #111;
+        width: 50%;
+        display: block;
+        text-align: center;
+        transition: all 1s ease;
+    }
+
+#click:checked ~ul{
+    left: 0%;
+}
+
+#click:checked ~.menu-btn i:before{
+    content: "\f00d";
+}
+    nav ul li{
+        margin: 40px 0px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover, nav ul li a.active{
+        color: red;
+        background: none;
+    }
+}

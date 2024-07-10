@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Savings Calculator</h1>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <button onclick="save()">Save</button>
+        <p>Total Saved: <span id="total">0</span></p>
+        <ul id="transactions"></ul>
+    </div>
+    <script>
+        let totalSaved = 0;
+
+function save() {
+    const amountInput = document.getElementById('amount');
+    const dateInput = document.getElementById('date');
+    const amount = parseFloat(amountInput.value);
+    const date = dateInput.value;
+
+    if (!isNaN(amount) && amount > 0 && date) {
+        totalSaved += amount;
+        document.getElementById('total').textContent = totalSaved.toFixed(2);
+
+        const transactionList = document.getElementById('transactions');
+        const listItem = document.createElement('li');
+        listItem.textContent = `${date}: $${amount.toFixed(2)}`;
+        transactionList.appendChild(listItem);
+
+        // Clear input fields
+        amountInput.value = '';
+        dateInput.value = '';
+    } else {
+        alert('Please enter a valid amount and date.');
+    }
+}
+
+    </script>
+</body>
+</html>
