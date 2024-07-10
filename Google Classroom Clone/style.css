@@ -8,59 +8,217 @@
 }
 body{
     background-color: #fff;
+    overflow: hidden;
 }
 .navbar{
     display: flex;
-    align-items: center;
-    padding: 10px;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     width: 100%;
-    width: auto;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-.navbar img{
-    width: 25px;
-    height: 25px;
-}
-.navbar-left{
+.navbar_left{
     display: flex;
-    align-items: center;
-    padding-left: 10px;
     justify-content: center;
+    align-items: center;
 }
-.navbar-right{
+.navbar_right{
     display: flex;
-    align-items: center;
-    padding-left: 10px;
     justify-content: center;
+    align-items: center;
+    margin-right: 50px;
 }
-.navbar i{
-    font-size: 25px;
+ .logo{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
-.navbar a {
-    text-decoration: none;
-    color: black;
-    width: 60px;
-    height: 60px;
-    display: block;
-    text-align: center;
-    line-height: 60px; 
-}
-
-.navbar .navbar-left p{
-    font-size: 20px;
-
-}
-.navbar a:hover :not(.classroom){
-    color: black;
-    width: 60px;
-    height: 60px;
-    background-color: #ddd;
-    display: inline-block;
-    text-align: center;
-    line-height: 60px;
+.navbar_left i{
+    font-size: 1.5rem;
+    color: #000;
     border-radius: 50%;
-    overflow: hidden;
+    padding: 8px;
+}
+.navbar_right i{
+    font-size: 1.5rem;
+    color: #000;
+    border-radius: 50%;
+    padding: 8px;
+}
+.profile_img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.navbar_left .heading{
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
+}
+.navbar_left .heading:hover{
+    text-decoration: 2px underline;
+}
+.navbar_left a, .navbar_right a{
+    padding: 0 10px;
+}
+.navbar_left i:hover, .navbar_right i:hover, .profile_img:hover .logo:hover{
+    background: #f1f1f1;
+}
+
+/* ==============main section ========== */
+.container{
+    display: flex;
+    margin-top: 62px;
+    margin-bottom: 100px;
+}
+.container .left_container{
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+
+.container .left_container ul {
+    display: block;
+   padding: 10px 0;
+}
+.container .left_container ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 35px;
+}
+.container .left_container ul .enrolled { 
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* display: block; */
+}
+
+.enrolled_content li{
+    padding: 10px 35px;
+}
+.enrolled_content li span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    background: blue;
+    color: #fff;
+    border-radius: 50%;
+}
+.enrolled_content li a{
+    padding: -20px;
+}
+
+
+
+.container .left_container ul li:hover {
+    background: #f1f1f1;
+    border-radius: 0 40px 40px 0  ;
+    margin-right: 10px;
+    
+}
+.container .left_container ul li i{
+    font-size: 1.5rem;
+}
+.container .left_container ul li a{
+    font-size: 1rem;
+    padding-left: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+.container .right_container{
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.right_container .card_container{
+    background: #fff;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.right_container .card_container:hover{
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    cursor: poi;
+}
+.card_top{
+    height: 90px;
+    background-color: rgb(255, 0, 149);
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card_top h2,p{
+    color: #fff;
+}
+.card_top h2:hover, .class:hover{
+    text-decoration: underline;
+}
+.card_top span i{
+    font-size: 1.4rem;
+    color: #fff;
+}
+.card_mid{
+    height: 130px;
+}
+.card_bottom{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+.name_logo {
+    font-size: 2.8rem;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
     position: relative;
-    transform: none;
-    z-index: inherit;
+    top: -40px;
+    left: 200px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.card_bottom i{
+    margin-left: 20px;
+    font-size: 1.4rem;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+.card_bottom  a{
+    display: inline-block;
+    position: relative;
+}
+.card_bottom a .work{
+    position: absolute;
+    width: 200px;
+    background-color: #696868;
+    color: #fff;
+    font-size: .8rem;
+    padding: 5px 2px;
+    border-radius: 5px;
+    top: 55px;
+    left: -50px;
+    visibility: hidden;
+}
+.card_bottom i:hover{
+    background: #ccc;
+}
+.card_bottom a:hover  .work{
+    visibility: visible;
 }
