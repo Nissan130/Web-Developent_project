@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: rgb(7, 7, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login_form{
+    background: #fff;
+    width: 300px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   
+}
+.login_form h2{
+    text-align: center;
+}
+.login_form form{
+    margin-top: 20px;
+    border:1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input_box{
+    margin-bottom: 20px;
+}
+.input_box label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.input_box input{
+    width: 100%;
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+}
+
+.input_box input:focus{
+    outline: 1px solid #1ca827;
+}
+.btn{
+    padding: 10px 5px;
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+    background: #1ca827;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.information{
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: none;
+}
+.information.active{
+    display: block;
+}
+.information h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.information p{
+    padding: 10px 0
+}
